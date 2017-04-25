@@ -4,11 +4,11 @@ using log4net.Core;
 
 namespace TransformApplication.Jobs
 {
-    internal class TestJob : Job, IJob
+    internal class TestBaseJob : BaseJob, IJob
     {
-        private static readonly ILog Log = LogManager.GetLogger(typeof(TestJob));
+        private static readonly ILog Log = LogManager.GetLogger(typeof(TestBaseJob));
 
-        public TestJob(string name)
+        public TestBaseJob(string name)
             : base(name)
         {
         }

@@ -4,17 +4,17 @@ using System.Threading.Tasks;
 
 namespace TransformApplication.Jobs
 {
-    internal abstract class Job
+    internal abstract class BaseJob
     {
         protected string name;
         private DateTime? now;
 
-        protected Job(string name)
+        protected BaseJob(string name)
         {
             this.name = name;
         }
 
-        public Task Task { get; protected set; }
+        public Task Task { get; private set; }
 
         protected DateTime Today
         {

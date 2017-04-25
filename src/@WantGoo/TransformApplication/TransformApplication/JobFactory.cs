@@ -10,7 +10,7 @@ namespace TransformApplication
             switch (name)
             {
                 case "TestJob":
-                    return new TestJob(name);
+                    return new TestBaseJob(name);
                 default:
                     throw new NotSupportedException();
             }

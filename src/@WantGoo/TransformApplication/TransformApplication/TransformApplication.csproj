@@ -56,8 +56,8 @@
     <Compile Include="Extensions.cs" />
     <Compile Include="JobFactory.cs" />
     <Compile Include="Jobs\IJob.cs" />
-    <Compile Include="Jobs\Job.cs" />
-    <Compile Include="Jobs\TestJob.cs" />
+    <Compile Include="Jobs\BaseJob.cs" />
+    <Compile Include="Jobs\TestBaseJob.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
